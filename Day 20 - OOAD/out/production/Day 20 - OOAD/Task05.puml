@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+participant A
+participant B
+
+A -> B: Message/action
+A --> B: reply
+
+@enduml
