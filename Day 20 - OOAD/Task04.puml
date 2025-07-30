@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+== Initialization ==
+
+Prassunamba -> ATLAS_Batch1: Congratulations all
+ATLAS_Batch1 --> Prassunamba: Thank You Meher
+
+== Repetition ==
+
+Prassunamba -> ATLAS_Batch1: Good luck for your Module 3
+ATLAS_Batch1 --> Prassunamba: Thank you Meher in advance
+@enduml
