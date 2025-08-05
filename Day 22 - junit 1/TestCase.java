@@ -1,0 +1,14 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
+
+class TestCase {
+    //Customer cobj = new Customer();
+    //cobj.testCaseCust();
+    String message = "hello all How are you";
+
+    @Test
+    void testMsg() {
+        System.out.println("asserting the Test case ");
+        assertEquals("hello all How are you", message);
+    }
+}
