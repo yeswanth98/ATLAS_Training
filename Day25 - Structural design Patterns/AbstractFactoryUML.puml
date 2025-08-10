@@ -1,0 +1,63 @@
+@startuml
+' Define interfaces
+interface Chair {
+    + sitOn()
+}
+
+interface Sofa {
+    + lieOn()
+}
+
+interface FurnitureFactory {
+    + createChair() : Chair
+    + createSofa() : Sofa
+}
+
+' Concrete chair classes
+class VictorianChair {
+    + sitOn()
+}
+
+class ModernChair {
+    + sitOn()
+}
+
+' Concrete sofa classes
+class VictorianSofa {
+    + lieOn()
+}
+
+class ModernSofa {
+    + lieOn()
+}
+
+' Concrete factories
+class VictorianFurnitureFactory {
+    + createChair() : Chair
+    + createSofa() : Sofa
+}
+
+class ModernFurnitureFactory {
+    + createChair() : Chair
+    + createSofa() : Sofa
+}
+
+' Client class
+class Client {
+    + main(args: String[])
+}
+
+' Relationships
+Chair <|.. VictorianChair
+Chair <|.. ModernChair
+
+Sofa <|.. VictorianSofa
+Sofa <|.. ModernSofa
+
+FurnitureFactory <|.. VictorianFurnitureFactory
+FurnitureFactory <|.. ModernFurnitureFactory
+
+Client --> FurnitureFactory
+Client --> Chair
+Client --> Sofa
+@enduml

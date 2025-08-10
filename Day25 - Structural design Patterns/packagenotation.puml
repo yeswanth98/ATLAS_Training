@@ -1,0 +1,32 @@
+@startuml
+package "DesignPatterns" {
+  package "Creational" {
+    [Singleton]
+    [FactoryMethod]
+    [AbstractFactory]
+    [Builder]
+    [Prototype]
+  }
+  package "Structural" {
+    [Adapter]
+    [Decorator]
+    [Proxy]
+    [Facade]
+    [Composite]
+    [Bridge]
+  }
+  package "Behavioral" {
+    [Observer]
+    [Strategy]
+    [Command]
+    [TemplateMethod]
+    [Iterator]
+    [Mediator]
+    [State]
+    [ChainOfResponsibility]
+    [Memento]
+    [Interpreter]
+    [Visitor]
+  }
+}
+@enduml
